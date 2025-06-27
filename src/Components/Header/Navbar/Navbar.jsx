@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink } from 'react-router';
+import { Link, NavLink } from 'react-router';
 import logo from '../../../../src/assets/images/logo.png'
 
 const Navbar = () => {
@@ -11,7 +11,7 @@ const Navbar = () => {
     <NavLink to={'/aboutUs'} className={({ isActive }) => isActive ? "mx-3 bg-[#CAEB66] hover:bg-[#5B6A2E] py-1 px-4 rounded-3xl font-semibold" : "py-1 px-4"}>About us</NavLink>
   </>
   return (
-    <div className='p-6'>
+    <div className='w-11/12 mx-auto py-6'>
       <div className="navbar bg-base-100 shadow-sm py-3 rounded-2xl">
         <div className="navbar-start">
           <div className="dropdown">
@@ -26,10 +26,14 @@ const Navbar = () => {
           </div>
 
           {/* LOGO */}
-          <div className="ml-4 flex justify-start items-center gap-2 w-full">
+          <button
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            className="ml-4 flex justify-start items-center gap-2 w-full"
+          >
             <img className="h-9 lg:h-10" src={logo} alt="logo" />
             <h1 className="-ml-5 -mb-5 text-xl lg:text-3xl font-extrabold">Profast</h1>
-          </div>
+          </button>
+
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">

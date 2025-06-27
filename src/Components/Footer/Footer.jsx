@@ -4,13 +4,13 @@ import logo from '../../../src/assets/images/logo.png'
 
 const Footer = () => {
   return (
-    <div className='p-6'>
+    <div className='w-11/12 mx-auto py-6'>
       <footer className="footer footer-horizontal footer-center bg-[#0B0B0B] text-[#DADADA] p-10 rounded-4xl flex flex-col items-center space-y-6">
 
         {/* LOGO */}
         <div className="flex justify-center items-center gap-2 w-full max-w-xs mx-auto">
           <img className="h-9 lg:h-10" src={logo} alt="logo" />
-          <h1 className="-ml-5 -mb-5 text-xl lg:text-3xl font-extrabold whitespace-nowrap">Profast</h1>
+          <h1 className="-ml-5 -mb-5 text-xl lg:text-3xl font-extrabold whitespace-nowrap text-white">Profast</h1>
         </div>
         <div>
           <p className='text-center -mt-10'>Enjoy fast, reliable parcel delivery with real-time tracking and zero hassle. From personal packages to <br /> business shipments — we deliver on time, every time.</p>
