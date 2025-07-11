@@ -7,7 +7,7 @@ import banner3 from '../../../../src/assets/banner/banner3.png';
 
 const Banner = () => {
   return (
-    <div className='w-11/12 mx-auto'>
+    <div className='w-11/12 mx-auto rounded-2xl lg:rounded-4xl overflow-hidden'>
       <Carousel
         autoPlay
         infiniteLoop
@@ -21,13 +21,25 @@ const Banner = () => {
         stopOnHover={false}
       >
         <div>
-          <img src={banner1} alt="Banner 1" className="h-[550px] w-full object-cover" />
+          <img
+            src={banner1}
+            alt="Banner 1"
+            className="h-40 sm:h-56 md:h-72 lg:h-[500px] xl:h-[550px] w-full object-cover"
+          />
         </div>
         <div>
-          <img src={banner2} alt="Banner 2" className="h-[550px] w-full object-cover" />
+          <img
+            src={banner2}
+            alt="Banner 2"
+            className="h-40 sm:h-56 md:h-72 lg:h-[500px] xl:h-[550px] w-full object-cover"
+          />
         </div>
         <div>
-          <img src={banner3} alt="Banner 3" className="h-[550px] w-full object-cover" />
+          <img
+            src={banner3}
+            alt="Banner 3"
+            className="h-40 sm:h-56 md:h-72 lg:h-[500px] xl:h-[550px] w-full object-cover"
+          />
         </div>
       </Carousel>
     </div>
